@@ -37,8 +37,8 @@ a secret door! Perhaps it might unlock with a secret key?""", []),
 chamber! Sadly, it has already been completely emptied by
 earlier adventurers. The only exit is to the south.""", [key, gold_coins, silver_coins]),
 
-    'enlightenment': Room("Room of enlightenment", """You have found the hidden room of enlightment! 
-    There is no physical escape, only spiritual. Ascend or be trapped forever!""", [painting, bones])
+    'enlightenment': Room("Room of enlightenment", """You have found the hidden room of enlightment!
+There is no physical escape, only spiritual. Ascend or be trapped forever!""", [painting, bones])
 }
 
 
