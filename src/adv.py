@@ -121,17 +121,17 @@ while True:
             else:
                 print("You don't have the key for this door.")
         else:
-            print("There is nothing to unlock!")
+            print("There is nothing here to unlock!")
     elif "meditate" in cmd or "ascend" in cmd or "pray" in cmd:
         if player.current_room == room['enlightenment']:
             if len(player.items) == 0:
                 print("You cast off all of your material possessions and attempt to focus your spirit.")
                 print("The heavens open and you leave behind your physical body as you transcend into a higher plain of existence.")
                 print("You feel at one with all things. You have achieved true enlightenment! Congratulations!")
-                print("Then end!")
+                print("The end!")
                 exit(0)
             else:
-                print("You try to ascend... but to no affect!")
+                print("You try to ascend... but to no effect!")
         else:
             print("Now is not the time for that!")
     else:
