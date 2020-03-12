@@ -16,6 +16,9 @@ the distance, but there is no way across the chasm."""),
     'narrow':   Room("Narrow Passage", """The narrow passage bends here from west
 to north. The smell of gold permeates the air."""),
 
+    "secret_door": Room("Secret Door Room", """Before you stands an empty room with
+a secret door! Perhaps it might unlock with a secret key?"""),
+
     'treasure': Room("Treasure Chamber", """You've found the long-lost treasure
 chamber! Sadly, it has already been completely emptied by
 earlier adventurers. The only exit is to the south."""),
@@ -28,8 +31,10 @@ room['outside'].n_to = room['foyer']
 room['foyer'].s_to = room['outside']
 room['foyer'].n_to = room['overlook']
 room['foyer'].e_to = room['narrow']
+room['foyer'].w_to = room['secret_door']
 room['overlook'].s_to = room['foyer']
 room['narrow'].w_to = room['foyer']
+room['secret_door'].e_to = room['foyer']
 room['narrow'].n_to = room['treasure']
 room['treasure'].s_to = room['narrow']
 
